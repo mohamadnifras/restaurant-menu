@@ -1,11 +1,30 @@
+"use client";
 import React from "react";
+import Image from "next/image";
 
 function HeroSection() {
   return (
     <div
-      className="w-full h-[231px] md:h-[311px] bg-cover flex flex-col items-center justify-center"
+      className="relative w-full h-[231px] md:h-[311px] bg-cover flex flex-col items-center justify-center"
       style={{ backgroundImage: "url('/images/Rectangle1.png')" }}
     >
+      <div className="flex absolute left-48 -top-9 ">
+        <Image
+          src="/images/logo.png" 
+          alt="My Logo"
+          width={251} 
+          height={72} 
+        />
+      </div>
+         <div className="absolute top-0 left-72">
+            <Image
+          src="/images/SOFT.png" 
+          alt="My Logo"
+          width={70} 
+          height={43} 
+        />
+        </div>
+
       <div className="flex justify-center">
         <div className="relative">
           <h1 className="absolute top-[3px] left-[3px] oswald uppercase text-[#800020] text-[75px] leading-[100%] tracking-[0.03em]">

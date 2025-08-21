@@ -14,13 +14,13 @@ const Navbar = () => {
           <Link href="/" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Home</Link>
         </li>
         <li>
-          <Link href="/menu" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Menu</Link>
+          <Link href="/" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Menu</Link>
         </li>
         <li>
-          <Link href="/reservation" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Make a Reservation</Link>
+          <Link href="/" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Make a Reservation</Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Contact Us</Link>
+          <Link href="/" className="hover:text-[#C5A059] active:text-[#C5A059] transition-colors duration-200">Contact Us</Link>
         </li>
       </ul>
 
