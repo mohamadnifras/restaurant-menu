@@ -10,7 +10,7 @@ type MenuItemProps = {
 
 function MenuItem({ active, menus }: MenuItemProps) {
   return (
-    <div className="w-full max-h-full flex flex-col md:flex-row justify-between bg-cover relative"
+    <div className="w-full flex flex-col md:flex-row justify-between bg-cover relative"
       style={{ backgroundImage: "url('/images/menu-item-img.png')" }}
     >
       <div className="hidden md:block">
