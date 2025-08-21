@@ -8,12 +8,14 @@ import { IoLogoInstagram } from "react-icons/io5";
 function Footer() {
   return (
     <div className="w-full">
-      <div className="bg-black w-full h-[311px] flex justify-center items-center space-x-3 ">
-        <div className="w-[373px] h-[134px] border border-[#C5A059] rounded-[15px] p-5 flex flex-col justify-center items-center font-Oswald font-bold">
-          <p className="  text-[#C5A059] uppercase text-[16px] mb-3">
+     
+      <div className="bg-black w-full flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0 py-6 md:py-12 px-4 md:px-0">
+       
+        <div className="order-2 md:order-1 w-full md:w-[373px] border border-[#C5A059] rounded-[15px] p-5 flex flex-col justify-center items-center font-Oswald font-bold">
+          <p className="text-[#C5A059] uppercase text-[16px] mb-3">
             Connect with Us
           </p>
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 mb-2">
             <Image
               src="/images/telephone.png"
               alt="telephone"
@@ -34,7 +36,9 @@ function Footer() {
             <p className="text-[#857878] text-[16px]">info@deepnetsoft.com</p>
           </div>
         </div>
-        <div className="relative w-[373px] h-[134px] border border-[#C5A059] rounded-[15px] font-Oswald font-semibold flex flex-col justify-center items-center">
+
+       
+        <div className="order-1 md:order-2 relative w-full md:w-[373px] border border-[#C5A059] rounded-[15px] font-Oswald font-semibold flex flex-col justify-center items-center p-5">
           <Image
             src="/images/logo1.png"
             alt="My Logo"
@@ -42,22 +46,24 @@ function Footer() {
             height={72}
             className="absolute -top-9"
           />
-          <h4 className="text-[#C5A059] text-[35px]">
+          <h4 className="text-[#C5A059] text-[28px] md:text-[35px] text-center mt-5">
             DEEP <span className="text-white">NET</span>{" "}
             <span className="text-[#857878]">SOFT</span>
           </h4>
-          <div className="flex  items-center text-[#808080] space-x-2">
-            <FiFacebook />
-            <TfiTwitter />
-            <AiOutlineYoutube />
-            <IoLogoInstagram />
+          <div className="flex items-center text-[#808080] space-x-3 mt-2">
+            <FiFacebook size={20} />
+            <TfiTwitter size={20} />
+            <AiOutlineYoutube size={20} />
+            <IoLogoInstagram size={20} />
           </div>
         </div>
-        <div className="w-[373px] h-[134px] border border-[#C5A059] rounded-[15px] p-5 flex flex-col justify-center items-center font-Oswald font-bold">
-          <p className="  text-[#C5A059] uppercase text-[16px] mb-3">
-            Find us{" "}
+
+        
+        <div className="order-3 w-full md:w-[373px] border border-[#C5A059] rounded-[15px] p-5 flex flex-col justify-center items-center font-Oswald font-bold">
+          <p className="text-[#C5A059] uppercase text-[16px] mb-3">
+            Find us
           </p>
-          <div className="flex items-center space-x-3 justify-center">
+          <div className="flex items-center space-x-3 justify-center text-center">
             <Image
               src="/images/location.png"
               alt="location"
@@ -71,9 +77,15 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#161616] w-full h-[45px] flex items-center justify-around text-[#857878] font-medium">
-        <p className="font-Oswald">© 2025 Deepnetsoft Solutions. All rights reserved.</p>
-        <p className="font-Oswald">Terms & Conditions <span className="pl-5">Privacy Policy</span></p>
+
+    
+      <div className="bg-[#161616] w-full flex flex-col md:flex-row items-center justify-between text-[#857878] font-medium py-3 px-4 md:px-12 text-center md:text-left space-y-2 md:space-y-0">
+        <p className="font-Oswald text-sm md:text-base">
+          © 2025 Deepnetsoft Solutions. All rights reserved.
+        </p>
+        <p className="font-Oswald text-sm md:text-base">
+          Terms & Conditions <span className="pl-2 md:pl-5">Privacy Policy</span>
+        </p>
       </div>
     </div>
   );

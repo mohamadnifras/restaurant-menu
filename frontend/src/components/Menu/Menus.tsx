@@ -6,7 +6,7 @@ import { AppDispatch, RootState } from "../../redux/app/store";
 import MenuItem from "./MenuItem";
 
 function Menus() {
-  const [active, setActive] = useState<string | null>(null);
+  const [active, setActive] = useState<string | null>("FOOD");
   const dispatch = useDispatch<AppDispatch>();
 
   const { menus, loading, error } = useSelector(
@@ -25,10 +25,10 @@ function Menus() {
   return (
     <>
       <div
-        className="w-full h-[79px] flex justify-center items-center"
+        className="w-full h-[79px] flex justify-center items-center overflow-hidden"
         style={{ backgroundImage: "url('/images/menu-bg-img.png')" }}
       >
-        <div className=" space-x-3 font-Oswald  font-semibold ">
+        <div className=" space-x-3 font-Oswald  font-semibold overflow-x-auto scrollbar-hide">
           {menus.map((item, index) => (
             <button
               key={index}
