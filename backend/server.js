@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 
-const  originsPort  = process.env.CLIENT_URL;
+const  originsPort  = process.env.CLIENT_URL
 
 const corsOptions = {
     origin:originsPort,
